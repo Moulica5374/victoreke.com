@@ -15,10 +15,11 @@ export default function Navbar() {
       title: "Projects",
       href: "/projects",
     },
-    {
-      title: "Blog",
-      href: "/blog",
+     {
+      title: "Certifications",
+      href: "/certifications",
     },
+   
     {
       title: "Photos",
       href: "/photos",

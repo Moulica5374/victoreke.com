@@ -18,7 +18,7 @@ const profile = {
       title: "Headline",
       type: "string",
       description: "In one short sentence, what do you do?",
-      validation: (Rule) => Rule.required().min(40).max(80),
+      validation: (Rule) => Rule.required().min(40).max(350),
     }),
     defineField({
       name: "profileImage",
@@ -27,7 +27,7 @@ const profile = {
       description: "Upload a profile picture",
       options: {
         hotspot: true,
-        metadata: ["lqip"], // "blurhash", "palette", etc
+        metadata: ["lqip"],
       },
       fields: [
         {
@@ -74,6 +74,86 @@ const profile = {
       title: "Usage",
       type: "blockContent",
       validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'socialLinks',
+      title: 'Social Links',
+      type: 'object',
+      fields: [
+        {
+          name: 'github',
+          title: 'GitHub',
+          type: 'url',
+          description: 'Your GitHub profile URL'
+        },
+        {
+          name: 'linkedin',
+          title: 'LinkedIn',
+          type: 'url',
+          description: 'Your LinkedIn profile URL'
+        },
+        {
+          name: 'twitter',
+          title: 'Twitter/X',
+          type: 'url',
+          description: 'Your Twitter/X profile URL'
+        },
+        {
+          name: 'stackoverflow',
+          title: 'Stack Overflow',
+          type: 'url'
+        },
+        {
+          name: 'codepen',
+          title: 'Codepen',
+          type: 'url'
+        },
+        {
+          name: 'dribbble',
+          title: 'Dribbble',
+          type: 'url'
+        },
+        {
+          name: 'instagram',
+          title: 'Instagram',
+          type: 'url'
+        },
+        {
+          name: 'youtube',
+          title: 'YouTube',
+          type: 'url'
+        },
+        {
+          name: 'dailydev',
+          title: 'Daily.dev',
+          type: 'url'
+        },
+        {
+          name: 'producthunt',
+          title: 'Product Hunt',
+          type: 'url'
+        },
+        {
+          name: 'unsplash',
+          title: 'Unsplash',
+          type: 'url'
+        },
+        {
+          name: 'steam',
+          title: 'Steam',
+          type: 'url'
+        },
+        {
+          name: 'codewars',
+          title: 'Codewars',
+          type: 'url'
+        },
+        {
+          name: 'gitlab',
+          title: 'GitLab',
+          type: 'url'
+        }
+      ]
     }),
   ],
 };
