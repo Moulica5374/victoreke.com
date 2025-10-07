@@ -6,11 +6,10 @@ import { Slide } from "../animation/Slide";
 export default function ProtectedResumeAccess() {
   const [email, setEmail] = useState('');
   const [verificationCode, setVerificationCode] = useState('');
-  const [step, setStep] = useState('email'); // 'email', 'verification', 'unlocked'
+  const [step, setStep] = useState('email');
   const [error, setError] = useState('');
   const [sentCode, setSentCode] = useState('');
 
-  // Blocked domains
   const blockedDomains = [
     'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com',
     'aol.com', 'icloud.com', 'protonmail.com', 'mail.com',
@@ -94,7 +93,6 @@ export default function ProtectedResumeAccess() {
     }
   };
 
-  // Once unlocked, show the actual resume
   if (step === 'unlocked') {
     return (
       <main className="max-w-7xl mx-auto md:px-16 px-6 lg:mt-32 mt-20">
@@ -132,7 +130,7 @@ export default function ProtectedResumeAccess() {
           </div>
 
           <div className="flex gap-4">
-            <a
+            
               href="/Moulica_Software_Engineer2.pdf"
               download="Moulica_Goli_Resume.pdf"
               className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
@@ -145,7 +143,6 @@ export default function ProtectedResumeAccess() {
     );
   }
 
-  // Verification step
   if (step === 'verification') {
     return (
       <main className="max-w-7xl mx-auto md:px-16 px-6 lg:mt-32 mt-20">
@@ -214,7 +211,6 @@ export default function ProtectedResumeAccess() {
     );
   }
 
-  // Email entry step
   return (
     <main className="max-w-7xl mx-auto md:px-16 px-6 lg:mt-32 mt-20">
       <div className="max-w-md mx-auto">
