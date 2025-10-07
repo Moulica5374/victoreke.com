@@ -15,12 +15,12 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Victor Eke | Software Developer",
+  title: "Moulica G | Data Engineer & Data Scientist",
   description:
-    "Victor Eke is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
-  url: "https://victoreke.com",
+    "Moulica G is a Data Engineer and Data Scientist passionate about machine learning, data analysis, and building scalable data solutions",
+  url: "https://moulica.vercel.app",
   ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    "https://moulica.vercel.app/profile.jpg", // Update with your actual image path
 };
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "victoreke.com",
+    siteName: "moulica.vercel.app",
     locale: "en-US",
     type: "website",
     description: options.description,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     canonical: options.url,
   },
   other: {
-    "google-site-verification": "IzcWMgn5Qjf-LCtA337KTGjivsf9bmod_1pZ-jxYQh8",
+    "google-site-verification": "IzcWMgn5Qjf-LCtA337KTGjivsf9bmod_1pZ-jxYQh8", // You can remove this line or add your own
   },
 };
 

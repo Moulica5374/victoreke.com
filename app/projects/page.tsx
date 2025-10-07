@@ -9,15 +9,15 @@ import { sanityFetch } from "@/lib/sanity.client";
 import PageHeading from "../components/shared/PageHeading";
 
 export const metadata: Metadata = {
-  title: "Project | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/projects"),
-  description: "Explore projects built by Victor Eke",
+  title: "Projects | Moulica G",
+  metadataBase: new URL("https://moulica.vercel.app/projects"),
+  description: "Explore projects built by Moulica G",
   openGraph: {
-    title: "Projects | Victor Eke",
-    url: "https://victoreke.com/projects",
-    description: "Explore projects built by Victor Eke",
+    title: "Projects | Moulica G",
+    url: "https://moulica.vercel.app/projects",
+    description: "Explore projects built by Moulica G",
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
+      "https://moulica.vercel.app/projects-og.jpg", // Add your own image or use the same profile image
   },
 };
 
