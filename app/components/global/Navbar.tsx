@@ -20,10 +20,7 @@ export default function Navbar() {
       href: "/certifications",
     },
    
-    {
-      title: "Photos",
-      href: "/photos",
-    },
+  
   ];
 
   return (
