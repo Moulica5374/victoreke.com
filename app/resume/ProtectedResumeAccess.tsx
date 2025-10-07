@@ -19,7 +19,7 @@ export default function ProtectedResumeAccess() {
 
   const educationalPatterns = ['.edu', '.ac.', 'university', 'college'];
 
-  const validateEmail = (email) => {
+  const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return { valid: false, message: 'Please enter a valid email address' };
@@ -123,22 +123,16 @@ export default function ProtectedResumeAccess() {
         </Slide>
 
         <Slide delay={0.1}>
-          {/* Your Sanity resume content goes here */}
-          {/* You can embed your existing resume PDF or Sanity content */}
           <div className="border dark:border-zinc-800 rounded-lg overflow-hidden bg-white dark:bg-zinc-900 mb-6">
-            {/* Option A: If you have a PDF */}
             <iframe
               src="/Moulica_Software_Engineer2.pdf" 
               className="w-full min-h-screen"
               title="Resume"
             />
-            
-            {/* Option B: Or link to your Sanity resume page */}
-            {/* Redirect to your existing Sanity resume or embed it here */}
           </div>
 
           <div className="flex gap-4">
-            
+            <a
               href="/Moulica_Software_Engineer2.pdf"
               download="Moulica_Goli_Resume.pdf"
               className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
@@ -166,7 +160,7 @@ export default function ProtectedResumeAccess() {
                 </div>
                 <h1 className="text-2xl font-bold mb-2">Check Your Email</h1>
                 <p className="text-zinc-600 dark:text-zinc-400">
-                  We've sent a verification code to
+                  We&apos;ve sent a verification code to
                 </p>
                 <p className="font-medium text-blue-600 dark:text-blue-400 mt-1">
                   {email}
