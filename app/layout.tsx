@@ -20,7 +20,7 @@ const options = {
     "Moulica G is a Data Engineer and Data Scientist passionate about machine learning, data analysis, and building scalable data solutions",
   url: "https://moulica-portfolio1.vercel.app",
   ogImage:
-    "https://moulica-portfolio1.vercel.app/og-image.png", // Update with your actual image path
+    "https://moulica-portfolio1.vercel.app/op.png", // Update with your actual image path
 };
 
 export const metadata: Metadata = {
