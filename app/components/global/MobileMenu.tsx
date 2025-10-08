@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import {
   HiBeaker,
   HiBookmarkAlt,
-  HiCamera,
+  HiAcademicCap,
   HiOutlineX,
   HiUser,
 } from "react-icons/hi";
@@ -26,14 +26,9 @@ export default function MobileMenu() {
       icon: HiBeaker,
     },
     {
-      title: "Blog",
-      href: "/blog",
-      icon: HiBookmarkAlt,
-    },
-    {
-      title: "Photos",
-      href: "/photos",
-      icon: HiCamera,
+      title: "Certifications",
+      href: "/certifications",
+      icon: HiAcademicCap, // Changed icon to match certifications
     },
   ];
 
