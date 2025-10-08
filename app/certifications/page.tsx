@@ -44,6 +44,57 @@ export default function Certifications() {
       verifyUrl: "https://www.credly.com/earner/earned/badge/82280f6a-2523-4fab-996f-4fc8347adf43https://www.credly.com/badges/82280f6a-2523-4fab-996f-4fc8347adf43https://www.credly.com/badges/82280f6a-2523-4fab-996f-4fc8347adf43", // Add your credential verification URL
       skills: ["Generative AI", "LLMs", "Deep Learning", "GPU Computing"],
     },
+    {
+      id: 5,
+      title: "Generative AI with Large Language Models",
+      issuer: "Amazon Web Services",
+      date: "Mar 2025",
+      credentialId: "5HD4JBRTLUFH",
+      logo: "/DeepLearning-AI.jpg", // You'll need to add this logo
+      verifyUrl: "https://www.coursera.org/account/accomplishments/verify/5HD4JBRTLUFH",
+      skills: ["Generative AI", "Large Language Models", "AWS", "Machine Learning"],
+    },
+ 
+    {
+      id: 6,
+      title: "DeepLearning.AI TensorFlow Developer",
+      issuer: "DeepLearning.AI",
+      date: "Feb 2025",
+      credentialId: "N6E634O7THNE",
+      logo: "/DeepLearning-AI.jpg", // You'll need to add this logo
+      verifyUrl: "https://www.coursera.org/account/accomplishments/verify/N6E634O7THNE",
+      skills: ["TensorFlow", "Deep Learning", "Neural Networks", "Python"],
+    },
+    {
+      id: 7,
+      title: "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
+      issuer: "DeepLearning.AI",
+      date: "Jan 2025",
+      credentialId: "JW8Q4XXVHNI0",
+      logo:"/DeepLearning-AI.jpg", // You'll need to add this logo
+      verifyUrl: "https://www.coursera.org/account/accomplishments/verify/JW8Q4XXVHNI0",
+      skills: ["TensorFlow", "AI", "Machine Learning", "Deep Learning"],
+    },
+    {
+      id: 8,
+      title: "Machine Learning Specialization",
+      issuer: "DeepLearning.AI, Stanford University",
+      date: "Nov 2024",
+      credentialId: "49H013DBPXB9",
+      logo: "/Stanford-University-Logo.png", // You'll need to add this logo
+      verifyUrl: "https://www.coursera.org/account/accomplishments/verify/49H013DBPXB9",
+      skills: ["Machine Learning", "Python", "Supervised Learning", "Unsupervised Learning", "Neural Networks"],
+    },
+    {
+      id: 9,
+      title: "SDC27 - PG Diploma in Software Development (Big Data)",
+      issuer: "United Latino Students Association",
+      date: "Jul 2022",
+      credentialId: "55404521",
+      logo: "/images (1).png", // You'll need to add this logo
+      verifyUrl: "https://www.credential.net/6de05d01-e687-4ae9-be18-2c98bede0a29#acc.eqwJNu7p",
+      skills: ["Big Data", "Software Development", "Data Engineering", "Hadoop", "Spark"],
+    },
   ];
 
   return (
